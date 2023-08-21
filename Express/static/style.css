@@ -1,0 +1,312 @@
+  @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+  }
+
+
+  /*nav bar  */
+  nav#navbar {
+    display: flex;
+  justify-content:space-between; /*This will push the login button to the right*/
+    /* align-items: center; Vertically center items */
+    padding: 10px; /* Add some padding for spacing */
+    background-color: #333; /* Example background color */
+    color: white; /* Example text color */
+  }
+  nav button{
+    margin: 5px;
+    justify-content: flex-end;
+    /* padding: 5px; */
+  }
+  nav#navbar ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  nav#navbar a.button {
+    background-color: #007bff; /* Example button color */
+    color: white;
+    border: none;
+    padding:  10px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+  }
+  /* scroll animation  */
+  .scroll-link {
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+  }
+
+  nav input{
+    padding: 10px;
+    /* margin-bottom: 15px; */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width:  50%;
+    display: inline-block;
+    justify-content: flex-end;
+  }
+
+
+
+  /* intro section css */
+
+  #introsection {
+    /* border: 2px solid red; */
+    height: 350px;
+    /* color:  white; */
+    background-image: url("https://wallpaperaccess.com/full/89618.jpg");
+
+    background-position: 0% 74.3%;
+    background-size: cover;
+
+    align-items: center;
+
+    /* background-color: red; */
+  }
+
+  #introsection #top {
+    margin: auto;
+    padding-top: 150px;
+    display: block;
+    width: 30%;
+    text-align: center;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    /* border:2px solid red; */
+  }
+
+  section #small {
+    /* border: 2px solid red; */
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 24px;
+  }
+  /* Basic styling for the section and container */
+  .section.text-gray-600.body-font {
+    padding: 50px 0;
+  }
+
+  .container.px-5.py-24.mx-auto {
+    max-width: 100%;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    margin-left:  auto;
+    margin-right: auto;
+  
+    
+  }
+
+  /* Styling for the main title and divider */
+  h1.text-2xl.font-medium.title-font.mb-2.text-gray-900 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: #111827;
+  }
+
+  .h-1.w-20.bg-indigo-500.rounded {
+    height: 2px;
+    width: 5rem;
+    background-color: #4f46e5;
+    border-radius: 0.125rem;
+  }
+
+  /* Styling for the paragraph */
+  p.w-full.leading-relaxed.text-gray-500 {
+    width: 100%;
+    line-height: 1.75rem;
+    color: #6b7280;
+  }
+
+  /* Styling for each card */
+  .p-4 {
+    padding: 10px;
+    display: inline-block;
+    margin: 20px;
+    
+    
+  }
+
+  .bg-gray-100 {
+    background-color: #f3f4f6;
+  }
+
+  .rounded-lg {
+    border-radius: 0.5rem;
+  }
+
+  .img.h-40.rounded.w-full.object-cover.object-center.mb-6 {
+    height: 10rem;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 1.5rem;
+  }
+
+  /* Styling for the subtitles, titles, and content */
+  h3.tracking-widest.text-indigo-500.text-xs.font-medium.title-font {
+    letter-spacing: 0.05em;
+    color: #6b46c1;
+  }
+
+  h2.text-lg.text-gray-900.font-medium.title-font.mb-4 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    color: #111827;
+  }
+
+  p.leading-relaxed.text-base {
+    font-size: 1rem;
+    line-height: 1.625rem;
+    color: #6b7280;
+  }
+
+  /* footer */
+  /* Styles for the footer section */
+  .footer {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    display: flex;
+  }
+
+  /* Styles for the contact information */
+  .contact-info {
+    margin-bottom: 20px;
+    /* border: 2px solid red; */
+    display: inline-block;
+    width: 45%;
+  }
+
+  .contact-info h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+
+  .contact-info p {
+    font-size: 0.9em;
+    margin: 5px;
+    padding: 10px;
+    color: #888;
+    /* border: 1px solid red; */
+    /* display: inline-block; */
+  }
+
+  /* Styles for social media links */
+
+  .social-media {
+    /* border: 2px solid red; */
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    width: 45%;
+  }
+
+  .social-media ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+
+  .social-media li {
+    margin: auto;
+    padding: auto;
+    /* border:  1px solid red; */
+    /* display: inline-block; */
+    /* margin-right: 15px; */
+  }
+
+  .social-media a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.2em;
+  }
+  .footer {
+    display: block;
+    margin-top: 20px;
+    /* border: 2px solid black */
+  }
+
+  /* copywrite reseved */
+
+  .copywrite {
+    /* border: 2px solid grey; */
+    text-align: center;
+  }
+
+  /* Style the form container */
+
+  .register h1 {
+    text-align: center;
+    margin: 20px 5px;
+    padding: 10px;
+  }
+  form {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin: auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 50%;
+  }
+
+  /* Style form elements */
+  label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    margin: auto;
+  }
+
+  form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+
+  form button {
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    height: 3vh;
+  }
+
+  button:hover {
+    background-color: #2980b9;
+  }
+
+  button:active {
+    background-color: #1f6699;
+  }
+
+  button:hover {
+    background-color: #0056b3;
+  }

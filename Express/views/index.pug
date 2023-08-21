@@ -1,0 +1,98 @@
+html
+  head
+    title= title
+    style 
+      include ../static/style.css
+      script(src="https://code.jquery.com/jquery-3.6.0.min.js")
+
+  body
+    nav#navbar
+      ul
+        li #[a(href='./') Home]
+        li #[a(href='/classinfo') Class info] 
+        li #[a(href='/join') Join]
+        li #[a(href='/about') About]
+      div.bars
+        a.button(href="/login") login 
+        a.button(href="#registers") Register 
+        input(type='text', placeholder='Search')
+    div.intro
+      section#introsection
+        div#top Welcome to harsh dance academy
+        div#small eat sleep dance repeat
+    section.text-gray-600.body-font
+      .container.px-5.py-24.mx-auto
+        .flex.flex-wrap.w-full.mb-20
+          .w-full.mb-6(class='lg:w-1/2 lg:mb-0')
+            h1.text-2xl.font-medium.title-font.mb-2.text-gray-900(class='sm:text-3xl') Pitchfork Kickstarter Taxidermy
+            .h-1.w-20.bg-indigo-500.rounded
+          p.w-full.leading-relaxed.text-gray-500(class='lg:w-1/2')
+            | Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven&apos;t heard of them man bun deep jianbing selfies heirloom prism food truck ugh squid celiac humblebrag.
+        .flex.flex-wrap.-m-4
+          .p-4(class='xl:w-1/4 md:w-1/2')
+            .bg-gray-100.p-6.rounded-lg
+              img.h-40.rounded.w-full.object-cover.object-center.mb-6(src='https://media.discordapp.net/attachments/1066331146864054362/1141424681233162250/alexandre-dinaut-FwzU0YtzB2M-unsplash.jpg?width=720&height=419' alt='content')
+              h3.tracking-widest.text-indigo-500.text-xs.font-medium.title-font SUBTITLE
+              h2.text-lg.text-gray-900.font-medium.title-font.mb-4 Chichen Itza
+              p.leading-relaxed.text-base
+                | Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.
+          .p-4(class='xl:w-1/4 md:w-1/2')
+            .bg-gray-100.p-6.rounded-lg
+              img.h-40.rounded.w-full.object-cover.object-center.mb-6(src='https://media.discordapp.net/attachments/1066331146864054362/1141424681233162250/alexandre-dinaut-FwzU0YtzB2M-unsplash.jpg?width=720&height=419' alt='content')
+              h3.tracking-widest.text-indigo-500.text-xs.font-medium.title-font SUBTITLE
+              h2.text-lg.text-gray-900.font-medium.title-font.mb-4 Colosseum Roma
+              p.leading-relaxed.text-base
+                | Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.
+          .p-4(class='xl:w-1/4 md:w-1/2')
+            .bg-gray-100.p-6.rounded-lg
+              img.h-40.rounded.w-full.object-cover.object-center.mb-6(src='https://media.discordapp.net/attachments/1066331146864054362/1141424682596303029/serhii-kindrat-NfNSeJ8ghL0-unsplash.jpg?width=720&height=480' alt='content')
+              h3.tracking-widest.text-indigo-500.text-xs.font-medium.title-font SUBTITLE
+              h2.text-lg.text-gray-900.font-medium.title-font.mb-4 Great Pyramid of Giza
+              p.leading-relaxed.text-base
+                | Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.
+          .p-4(class='xl:w-1/4 md:w-1/2')
+            .bg-gray-100.p-6.rounded-lg
+              img.h-40.rounded.w-full.object-cover.object-center.mb-6(src='https://media.discordapp.net/attachments/1066331146864054362/1141424682596303029/serhii-kindrat-NfNSeJ8ghL0-unsplash.jpg?width=720&height=480' alt='content')
+              h3.tracking-widest.text-indigo-500.text-xs.font-medium.title-font SUBTITLE
+              h2.text-lg.text-gray-900.font-medium.title-font.mb-4 San Francisco
+              p.leading-relaxed.text-base
+                | Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.
+      hr  
+    section#registers
+      div.register
+        h1 Registration Form
+        form(action="/register" method="POST")
+          label(for="username") Username:
+          input(type="text" name="username" id="username" required)
+
+          label(for="email") Email:
+          input(type="email" name="email" id="email" required)
+
+          label(for="password") Password:
+          input(type="password" name="password" id="password" required)
+
+          label(for="confirmPassword") Confirm Password:
+          input(type="password" name="confirmPassword" id="confirmPassword" required)
+
+          button(type="submit") Register
+    footer.footer
+      div.footer
+        .contact-info
+          h3 Contact Us
+          p Address: 123 Dance Street, Cityville
+          p Phone: (123) 456-7890
+          p Email: info@danceacademy.co
+        .social-media
+          h3 Follow Us
+          ul
+            li
+              a(href="#") Facebook
+            li
+              a(href="#") Instagram
+            li
+              a(href="#") Twitter
+            li
+              a(href="#") YouTube
+      div.copywrite
+        p © 2023 Your Dance Academy. All rights reserved.
+    script("../static/scripts.js")
